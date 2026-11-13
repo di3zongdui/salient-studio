@@ -8,16 +8,16 @@
 
 ## 下载
 
-### 当前版本 r9（2026-11-11）
+### 当前版本 r10（2026-11-13）
 
-**[点这里下载 salient-studio-r9.zip](https://github.com/di3zongdui/salient-studio/releases/latest/download/salient-studio-r9.zip)**
+**[点这里下载 salient-studio-r10.zip](https://github.com/di3zongdui/salient-studio/releases/latest/download/salient-studio-r10.zip)**
 
 | 项 | 值 |
 |---|---|
-| 文件 | `salient-studio-r9.zip` |
-| 大小 | 1.82 MB（1,911,477 字节） |
-| 文件数 | 180 |
-| SHA-256 | `80b8d1088151ae6c12b22197d892fbaf381ccdbec84f04f8294e5c8434bfc2c8` |
+| 文件 | `salient-studio-r10.zip` |
+| 大小 | 1.84 MB（1,925,868 字节） |
+| 文件数 | 181 |
+| SHA-256 | `0766a940392550fd7686cc607e72d45adae063738ff73f7a08b433262cdea8da` |
 
 下载后请核对指纹，方法见文末「校验下载」。
 
@@ -88,6 +88,7 @@ macOS / Linux：`sh 安装.sh`，其余相同。
 
 | 版本 | 日期 | 主要变化 |
 |---|---|---|
+| r10 | 2026-11-13 | 新建草稿按「品牌 + 样板 + 标题」写（修复选 A 出 B、抄样板示例标题与示例素材、正文混进写作指令）；交付包不再携带后台口令、本机用户目录与个人领英账号；新增领英发帖适配器 |
 | r9 | 2026-11-11 | 刘润体成为第 10 套内置写作样板；客户 SOP 扩写至 4.9–6.9K 字；包体从 7.8 MB 降到 4.13 MB（不再夹带运行时数据）；安装包压缩改用自带打包器，中文文件名在各系统解压都不乱码；首次安装时把技能整目录落盘（此前只落 `SKILL.md`，`references/` 里的规范是断链） |
 | r8 | 2026-11-08 | 后台守护进程 + 开机自启；再双击启动只推首页，不重开服务 |
 | r7 | 2026-11-05 | 启动即到首页；客户门户只读口令 |
@@ -101,16 +102,16 @@ macOS / Linux：`sh 安装.sh`，其余相同。
 Windows 资源管理器不自带校验功能，用 PowerShell 一行：
 
 ```powershell
-Get-FileHash .\salient-studio-r9.zip -Algorithm SHA256
+Get-FileHash .\salient-studio-r10.zip -Algorithm SHA256
 ```
 
 macOS / Linux：
 
 ```bash
-shasum -a 256 salient-studio-r9.zip
+shasum -a 256 salient-studio-r10.zip
 ```
 
-输出应为 `80b8d1088151ae6c12b22197d892fbaf381ccdbec84f04f8294e5c8434bfc2c8`。不一致说明下载损坏或被替换，请重新下载并向我们反馈。
+输出应为 `0766a940392550fd7686cc607e72d45adae063738ff73f7a08b433262cdea8da`。不一致说明下载损坏或被替换，请重新下载并向我们反馈。
 
 ---
 

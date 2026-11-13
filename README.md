@@ -8,16 +8,16 @@
 
 ## 下载
 
-### 当前版本 r12（2026-11-13）
+### 当前版本 r13（2026-11-13）
 
-**[点这里下载 salient-studio-r12.zip](https://github.com/di3zongdui/salient-studio/releases/latest/download/salient-studio-r12.zip)**
+**[点这里下载 salient-studio-r13.zip](https://github.com/di3zongdui/salient-studio/releases/latest/download/salient-studio-r13.zip)**
 
 | 项 | 值 |
 |---|---|
-| 文件 | `salient-studio-r12.zip` |
-| 大小 | 1.87 MB（1,962,535 字节） |
-| 文件数 | 187 |
-| SHA-256 | `4715ba56d6fb26b9a01f8dec7b8d2e4ae9ed76b281dd857a985b396dcd1d4e8d` |
+| 文件 | `salient-studio-r13.zip` |
+| 大小 | 1.88 MB（1,966,584 字节） |
+| 文件数 | 188 |
+| SHA-256 | `b32429de8b0d5424a3cad62eccb32588a4fe39ecb4c882a9faca055e99ddd646` |
 
 下载后请核对指纹，方法见文末「校验下载」。
 
@@ -92,6 +92,7 @@ macOS / Linux：`sh 安装.sh`，其余相同。
 
 | 版本 | 日期 | 主要变化 |
 |---|---|---|
+| r13 | 2026-11-13 | 客户实测后修根因：打包侧与自检侧原来各有一份脚本清单，漏了文件自检照样去调、于是客户第一眼是一段英文报错。现在两边读同一份清单（`scripts/pack_manifest.js`），自检新增「随包脚本完整性」一行，缺文件一律讲成「安装包不完整、重新解压整包」；没装发布依赖时 `vault.js` 与「检查登录态.cmd」也不再抛英文 `Cannot find module` |
 | r12 | 2026-11-13 | 补齐包内缺失的 5 个脚本：安装说明里让人执行 `vault.js`、数据包说明里让人执行 `pack_data.js`，而这两个文件此前不在包里（照文档敲就是「找不到模块」）；自检里两项检查因缺脚本只能报「跑不起来」或假装通过，现在如实显示 |
 | r11 | 2026-11-13 | 安装包内新增一份**独立的 `.env` 配置文件**（空白模板，客户解压即可见、可改）；环境自检新增「模型 Key」一行，未填时提示改哪个文件、不阻断启动 |
 | r10 | 2026-11-13 | 新建草稿按「品牌 + 样板 + 标题」写（修复选 A 出 B、抄样板示例标题与示例素材、正文混进写作指令）；交付包不再携带后台口令、本机用户目录与个人领英账号；新增领英发帖适配器 |
@@ -108,16 +109,16 @@ macOS / Linux：`sh 安装.sh`，其余相同。
 Windows 资源管理器不自带校验功能，用 PowerShell 一行：
 
 ```powershell
-Get-FileHash .\salient-studio-r12.zip -Algorithm SHA256
+Get-FileHash .\salient-studio-r13.zip -Algorithm SHA256
 ```
 
 macOS / Linux：
 
 ```bash
-shasum -a 256 salient-studio-r12.zip
+shasum -a 256 salient-studio-r13.zip
 ```
 
-输出应为 `4715ba56d6fb26b9a01f8dec7b8d2e4ae9ed76b281dd857a985b396dcd1d4e8d`。不一致说明下载损坏或被替换，请重新下载并向我们反馈。
+输出应为 `b32429de8b0d5424a3cad62eccb32588a4fe39ecb4c882a9faca055e99ddd646`。不一致说明下载损坏或被替换，请重新下载并向我们反馈。
 
 ---
 

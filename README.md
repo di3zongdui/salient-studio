@@ -8,16 +8,16 @@
 
 ## 下载
 
-### 当前版本 r11（2026-11-13）
+### 当前版本 r12（2026-11-13）
 
-**[点这里下载 salient-studio-r11.zip](https://github.com/di3zongdui/salient-studio/releases/latest/download/salient-studio-r11.zip)**
+**[点这里下载 salient-studio-r12.zip](https://github.com/di3zongdui/salient-studio/releases/latest/download/salient-studio-r12.zip)**
 
 | 项 | 值 |
 |---|---|
-| 文件 | `salient-studio-r11.zip` |
-| 大小 | 1.84 MB（1,929,539 字节） |
-| 文件数 | 182 |
-| SHA-256 | `7d93173dc64279791261b641c562ee44e9f659369b55dfabd46907549678ca2b` |
+| 文件 | `salient-studio-r12.zip` |
+| 大小 | 1.87 MB（1,962,535 字节） |
+| 文件数 | 187 |
+| SHA-256 | `4715ba56d6fb26b9a01f8dec7b8d2e4ae9ed76b281dd857a985b396dcd1d4e8d` |
 
 下载后请核对指纹，方法见文末「校验下载」。
 
@@ -92,6 +92,7 @@ macOS / Linux：`sh 安装.sh`，其余相同。
 
 | 版本 | 日期 | 主要变化 |
 |---|---|---|
+| r12 | 2026-11-13 | 补齐包内缺失的 5 个脚本：安装说明里让人执行 `vault.js`、数据包说明里让人执行 `pack_data.js`，而这两个文件此前不在包里（照文档敲就是「找不到模块」）；自检里两项检查因缺脚本只能报「跑不起来」或假装通过，现在如实显示 |
 | r11 | 2026-11-13 | 安装包内新增一份**独立的 `.env` 配置文件**（空白模板，客户解压即可见、可改）；环境自检新增「模型 Key」一行，未填时提示改哪个文件、不阻断启动 |
 | r10 | 2026-11-13 | 新建草稿按「品牌 + 样板 + 标题」写（修复选 A 出 B、抄样板示例标题与示例素材、正文混进写作指令）；交付包不再携带后台口令、本机用户目录与个人领英账号；新增领英发帖适配器 |
 | r9 | 2026-11-11 | 刘润体成为第 10 套内置写作样板；客户 SOP 扩写至 4.9–6.9K 字；包体从 7.8 MB 降到 4.13 MB（不再夹带运行时数据）；安装包压缩改用自带打包器，中文文件名在各系统解压都不乱码；首次安装时把技能整目录落盘（此前只落 `SKILL.md`，`references/` 里的规范是断链） |
@@ -107,16 +108,16 @@ macOS / Linux：`sh 安装.sh`，其余相同。
 Windows 资源管理器不自带校验功能，用 PowerShell 一行：
 
 ```powershell
-Get-FileHash .\salient-studio-r11.zip -Algorithm SHA256
+Get-FileHash .\salient-studio-r12.zip -Algorithm SHA256
 ```
 
 macOS / Linux：
 
 ```bash
-shasum -a 256 salient-studio-r11.zip
+shasum -a 256 salient-studio-r12.zip
 ```
 
-输出应为 `7d93173dc64279791261b641c562ee44e9f659369b55dfabd46907549678ca2b`。不一致说明下载损坏或被替换，请重新下载并向我们反馈。
+输出应为 `4715ba56d6fb26b9a01f8dec7b8d2e4ae9ed76b281dd857a985b396dcd1d4e8d`。不一致说明下载损坏或被替换，请重新下载并向我们反馈。
 
 ---
 
